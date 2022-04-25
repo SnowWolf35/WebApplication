@@ -1,11 +1,30 @@
 <html>
     <head>
-        <title>Login</title>
+        <title>FeedBack</title>
     </head>
     <body>
-        <form action="home.html" method="POST">
-            <input type="textarea" name="feedback" placeholder="Feedback"><br><br>
-            <input type="submit" name="Submit" value="Submit">
+        <form action="home.html" method="post">
+            <h2>College Feedback Page</h2>
+            <p>Note: First Name, Last Name, Email and Password are mandatory</p>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="First Name" required>
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" placeholder="Last Name" required><br/><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <label for="pass">Password:</label>
+            <input type="password" name="password" id="pass" placeholder="Password"required>
+            <p>Are you over the age of 18?</p>
+            <label for="yes">Yes</label>
+            <input id="yes" type="radio" name="age" value="Yes">
+            <label for="no">No</label>
+            <input type="radio" name="age" id="no" value="No">
+            <p>Do you have Credit Card or Paypal?</p>
+            <select name="payment">
+                <option value="paypal">Paypal</option>
+                <option value="creditcard">Credit Card</option>
+            </select> <br><br>
+            <input type="submit" value="submit">
         </form>
     </body>
 </html>
